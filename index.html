@@ -644,7 +644,10 @@ footer { background:var(--bg); border-top:1px solid var(--border); padding:2.2re
     </div>
   </div>
   <div class="contact-right">
-    <form class="form fade-up" id="contactForm" action="https://formspree.io/f/xdapgedk" method="POST">
+    <form class="form fade-up" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="8e12658f-8bd7-4778-8ce1-9c3f9a06e3f6">
+      <input type="hidden" name="subject" value="New Quote Request - Presecio">
+      <input type="hidden" name="redirect" value="https://presecio.github.io/Presecio">
       <div class="form-row">
         <div class="field"><label>First name</label><input type="text" name="first_name" placeholder="Alex" required></div>
         <div class="field"><label>Last name</label><input type="text" name="last_name" placeholder="Johnson" required></div>
