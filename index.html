@@ -646,21 +646,21 @@ footer { background:var(--bg); border-top:1px solid var(--border); padding:2.2re
   <div class="contact-right">
     <form class="form fade-up" id="contactForm" action="https://formspree.io/f/xdapgedk" method="POST">
       <div class="form-row">
-        <div class="field"><label>First name</label><input type="text" placeholder="Alex" required></div>
-        <div class="field"><label>Last name</label><input type="text" placeholder="Johnson" required></div>
+        <div class="field"><label>First name</label><input type="text" name="first_name" placeholder="Alex" required></div>
+        <div class="field"><label>Last name</label><input type="text" name="last_name" placeholder="Johnson" required></div>
       </div>
-      <div class="field"><label>Business name</label><input type="text" placeholder="Your Business Pty Ltd" required></div>
-      <div class="field"><label>Email address</label><input type="email" placeholder="you@yourbusiness.com.au" required></div>
+      <div class="field"><label>Business name</label><input type="text" name="business_name" placeholder="Your Business Pty Ltd" required></div>
+      <div class="field"><label>Email address</label><input type="email" name="email" placeholder="you@yourbusiness.com.au" required></div>
       <div class="field">
         <label>What do you need?</label>
-        <select required>
+        <select name="service_needed" required>
           <option value="" disabled selected>Select an option</option>
           <option>Brand new website</option>
           <option>Upgrade my existing website</option>
           <option>Not sure &mdash; let's chat</option>
         </select>
       </div>
-      <div class="field"><label>Tell us about your business</label><textarea placeholder="What does your business do? Who are your customers? Any goals or ideas for the website?"></textarea></div>
+      <div class="field"><label>Tell us about your business</label><textarea name="message" placeholder="What does your business do? Who are your customers? Any goals or ideas for the website?"></textarea></div>
       <button type="submit" class="btn-primary" style="width:100%;font-size:.88rem;padding:1.1rem;">Send my free quote request &rarr;</button>
       <p class="form-fine">No spam. No commitment. Just a friendly conversation.</p>
     </form>
