@@ -224,6 +224,19 @@ nav {
 .step-desc { font-size:.82rem; color:var(--muted); line-height:1.7; }
  
 /* PRICING */
+/* REVIEWS */
+.reviews-section { background: var(--bg2); }
+.reviews-intro { text-align:center; max-width:560px; margin:0 auto 3.5rem; }
+.reviews-intro .section-tag { justify-content:center; }
+.reviews-intro .section-title { text-align:center; }
+.reviews-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1.5rem; }
+.review-card { background:var(--surface); border:1px solid var(--border); border-radius:6px; padding:2rem; display:flex; flex-direction:column; gap:1.2rem; }
+.review-stars { color:var(--teal); font-size:1.1rem; letter-spacing:.1em; }
+.review-text { color:var(--muted); font-size:.9rem; line-height:1.8; flex:1; }
+.review-name { color:var(--text); font-weight:700; font-size:.9rem; }
+.review-biz { color:var(--blue); font-size:.75rem; letter-spacing:.1em; text-transform:uppercase; margin-top:.2rem; }
+@media(max-width:900px){.reviews-grid{grid-template-columns:1fr;}}
+
 .pricing { background: var(--bg2); }
 .pricing-intro { text-align:center; max-width:560px; margin:0 auto 3.5rem; }
 .pricing-intro .section-tag { justify-content:center; }
@@ -515,53 +528,49 @@ footer { background:var(--bg); border-top:1px solid var(--border); padding:2.2re
 </section>
  
 <!-- WHY 24/7 -->
-<section class="always-on" id="why">
-  <div class="always-left">
-    <p class="section-tag fade-up">Why it matters</p>
-    <h2 class="section-title fade-up">While you're closed, <em>competitors are winning.</em></h2>
-    <p class="always-body fade-up">Every hour your business doesn't have a great website is an hour potential customers are finding someone else. A website is your best salesperson &mdash; it never takes a day off, never gets sick, and works every single hour of the year.</p>
-    <div class="stat-row fade-up">
-      <div class="stat-card"><div class="stat-big">81<span>%</span></div><div class="stat-desc">of customers research online before visiting or calling a business</div></div>
-      <div class="stat-card"><div class="stat-big">3<span>x</span></div><div class="stat-desc">more enquiries for businesses with a professional web presence</div></div>
-      <div class="stat-card"><div class="stat-big">75<span>%</span></div><div class="stat-desc">of users judge a business's credibility by its website design</div></div>
-      <div class="stat-card"><div class="stat-big">24<span>/7</span></div><div class="stat-desc">hours your website works &mdash; even while you sleep or take a holiday</div></div>
-    </div>
-  </div>
-  <div class="always-right">
-    <p class="section-tag fade-up">A day in the life</p>
-    <h2 class="section-title fade-up" style="font-size:clamp(1.4rem,3vw,2rem);margin-bottom:2rem;">Your website, <em>working all day.</em></h2>
-    <div class="timeline">
-      <div class="timeline-item fade-up">
-        <div class="timeline-time">7:30am</div>
-        <div><div class="timeline-title">Morning commuter searches for your service</div><div class="timeline-desc">Finds your website, reads your services page, submits a quote request before work.</div><span class="timeline-badge">New lead</span></div>
-      </div>
-      <div class="timeline-item fade-up" style="transition-delay:.1s">
-        <div class="timeline-time">12:15pm</div>
-        <div><div class="timeline-title">Lunch-break browser discovers your business</div><div class="timeline-desc">Spends 3 minutes reading your about page and reviews. Saves your number.</div><span class="timeline-badge">Brand awareness</span></div>
-      </div>
-      <div class="timeline-item fade-up" style="transition-delay:.2s">
-        <div class="timeline-time">6:00pm</div>
-        <div><div class="timeline-title">After-work Google search leads to your site</div><div class="timeline-desc">They compare your site to two competitors. Your professional look wins them over.</div><span class="timeline-badge">Conversion</span></div>
-      </div>
-      <div class="timeline-item fade-up" style="transition-delay:.3s">
-        <div class="timeline-time">10:45pm</div>
-        <div><div class="timeline-title">Late-night booking fills tomorrow's schedule</div><div class="timeline-desc">While you sleep, your contact form captures a high-value enquiry waiting in your inbox at sunrise.</div><span class="timeline-badge">Overnight lead</span></div>
-      </div>
-    </div>
+<section class="always-on" id="why" style="display:block;">
+  <p class="section-tag fade-up">Why it matters</p>
+  <h2 class="section-title fade-up">While you're closed, <em>competitors are winning.</em></h2>
+  <p class="always-body fade-up">Every hour your business doesn't have a great website is an hour potential customers are finding someone else. A website is your best salesperson &mdash; it never takes a day off, never gets sick, and works every single hour of the year.</p>
+  <div class="stat-row fade-up">
+    <div class="stat-card"><div class="stat-big">81<span>%</span></div><div class="stat-desc">of customers research online before visiting or calling a business</div></div>
+    <div class="stat-card"><div class="stat-big">3<span>x</span></div><div class="stat-desc">more enquiries for businesses with a professional web presence</div></div>
+    <div class="stat-card"><div class="stat-big">75<span>%</span></div><div class="stat-desc">of users judge a business's credibility by its website design</div></div>
+    <div class="stat-card"><div class="stat-big">24<span>/7</span></div><div class="stat-desc">hours your website works &mdash; even while you sleep or take a holiday</div></div>
   </div>
 </section>
  
-<!-- PROCESS -->
-<section class="process section" id="process">
-  <div class="process-intro fade-up">
-    <p class="section-tag">How it works</p>
-    <h2 class="section-title">Up and running in <em>weeks, not months.</em></h2>
+<!-- REVIEWS -->
+<section class="reviews-section section" id="reviews">
+  <div class="reviews-intro fade-up">
+    <p class="section-tag">What clients say</p>
+    <h2 class="section-title">Real results, <em>real businesses.</em></h2>
   </div>
-  <div class="process-steps">
-    <div class="process-step fade-up"><div class="step-n">01</div><div class="step-title">Free Consultation</div><div class="step-desc">We learn about your business, your goals, and who your customers are. No jargon, no pressure &mdash; just a friendly chat about what you need.</div></div>
-    <div class="process-step fade-up" style="transition-delay:.1s"><div class="step-n">02</div><div class="step-title">Design &amp; Plan</div><div class="step-desc">We present a design concept tailored to your brand. You give feedback and we refine it until it's exactly right.</div></div>
-    <div class="process-step fade-up" style="transition-delay:.2s"><div class="step-n">03</div><div class="step-title">Build &amp; Test</div><div class="step-desc">We build your site, test it on every device and browser, and make sure it loads fast and looks flawless before going live.</div></div>
-    <div class="process-step fade-up" style="transition-delay:.3s"><div class="step-n">04</div><div class="step-title">Launch &amp; Grow</div><div class="step-desc">Your site goes live and starts working for you 24/7. We stick around for support, updates, and ongoing improvements.</div></div>
+  <div class="reviews-grid">
+    <div class="review-card fade-up">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"Hari did an amazing job creating my website. It turned out exactly how I wanted it and the whole process was smooth from start to finish. His communication was excellent, and he was very patient working around my busy schedule. Anytime I wanted something changed or adjusted it was never a problem and he handled everything quickly and efficiently. I would highly recommend Hari to anyone looking for a professional, reliable website designer."</p>
+      <div class="review-author">
+        <div class="review-name">Marko</div>
+        <div class="review-biz">WA Interior Linings</div>
+      </div>
+    </div>
+    <div class="review-card fade-up" style="transition-delay:.1s">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"Hari got my site done quickly and was easy to deal with the whole way through. Made tweaks without any hassle — really happy with how it turned out."</p>
+      <div class="review-author">
+        <div class="review-name">Jake</div>
+        <div class="review-biz">JB Construction</div>
+      </div>
+    </div>
+    <div class="review-card fade-up" style="transition-delay:.2s">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"Really impressed with the end result. The site looks professional and exactly what I needed for the business. Would definitely recommend Hari to any tradie looking to get online."</p>
+      <div class="review-author">
+        <div class="review-name">Dean</div>
+        <div class="review-biz">Clearflow Plumbing</div>
+      </div>
+    </div>
   </div>
 </section>
  
@@ -619,6 +628,20 @@ footer { background:var(--bg); border-top:1px solid var(--border); padding:2.2re
     </div>
     <a href="#contact" class="btn-primary" style="width:100%;text-align:center;display:block;font-size:.88rem;padding:1.1rem;">Get my website &rarr;</a>
     <p class="price-fine">No lock-in contract &middot; Cancel the monthly plan anytime</p>
+  </div>
+</section>
+ 
+<!-- PROCESS -->
+<section class="process section" id="process">
+  <div class="process-intro fade-up">
+    <p class="section-tag">How it works</p>
+    <h2 class="section-title">Up and running in <em>weeks, not months.</em></h2>
+  </div>
+  <div class="process-steps">
+    <div class="process-step fade-up"><div class="step-n">01</div><div class="step-title">Free Consultation</div><div class="step-desc">We learn about your business, your goals, and who your customers are. No jargon, no pressure &mdash; just a friendly chat about what you need.</div></div>
+    <div class="process-step fade-up" style="transition-delay:.1s"><div class="step-n">02</div><div class="step-title">Design &amp; Plan</div><div class="step-desc">We present a design concept tailored to your brand. You give feedback and we refine it until it's exactly right.</div></div>
+    <div class="process-step fade-up" style="transition-delay:.2s"><div class="step-n">03</div><div class="step-title">Build &amp; Test</div><div class="step-desc">We build your site, test it on every device and browser, and make sure it loads fast and looks flawless before going live.</div></div>
+    <div class="process-step fade-up" style="transition-delay:.3s"><div class="step-n">04</div><div class="step-title">Launch &amp; Grow</div><div class="step-desc">Your site goes live and starts working for you 24/7. We stick around for support, updates, and ongoing improvements.</div></div>
   </div>
 </section>
  
