@@ -242,27 +242,30 @@ nav {
 .pricing-intro .section-tag { justify-content:center; }
 .pricing-intro .section-title { text-align:center; }
 .pricing-intro p { color:var(--muted); font-size:.9rem; margin-top:1rem; }
-.price-card { max-width:620px; margin:0 auto; background:var(--bg3); border:1px solid var(--blue); border-radius:6px; padding:2.5rem 2.2rem; position:relative; }
-.featured-badge { position:absolute; top:-1px; left:50%; transform:translateX(-50%); background:var(--blue); color:var(--bg); font-size:.62rem; font-weight:700; letter-spacing:.14em; text-transform:uppercase; padding:.28rem 1.2rem; border-radius:0 0 4px 4px; }
-.price-plan { font-size:.7rem; letter-spacing:.18em; text-transform:uppercase; color:var(--muted); margin-bottom:1.2rem; }
-.price-amounts { display:grid; grid-template-columns:1fr 1fr; gap:1.5rem; margin-bottom:1rem; }
-.price-col-label { font-size:.63rem; letter-spacing:.15em; text-transform:uppercase; color:var(--dim); margin-bottom:.35rem; }
-.price-amount { font-family:var(--serif); font-size:2.6rem; font-weight:800; color:var(--text); line-height:1; }
-.price-amount sup { font-size:1.1rem; vertical-align:top; margin-top:.45rem; color:var(--muted); }
-.price-amount .per { font-size:1rem; font-weight:400; color:var(--muted); }
-.price-period { font-size:.76rem; color:var(--muted); margin-top:.25rem; }
-.price-divider { border:none; border-top:1px solid var(--border); margin:1.5rem 0; }
-.price-features-grid { display:grid; grid-template-columns:1fr 1fr; gap:0 2rem; }
-.features-col-label { font-size:.67rem; letter-spacing:.14em; text-transform:uppercase; font-weight:600; margin-bottom:.8rem; }
+.price-grid { display:grid; grid-template-columns:1fr 1fr; gap:1.5rem; max-width:1000px; margin:0 auto; align-items:stretch; }
+.price-card { background:var(--bg3); border:1px solid var(--border); border-radius:6px; padding:2.5rem 2.2rem; position:relative; display:flex; flex-direction:column; }
+.price-card.featured { border-color:var(--blue); box-shadow:0 0 0 1px var(--blue), 0 12px 40px var(--blue-glow); }
+.featured-badge { position:absolute; top:-1px; left:50%; transform:translateX(-50%); background:var(--blue); color:var(--bg); font-size:.62rem; font-weight:700; letter-spacing:.14em; text-transform:uppercase; padding:.28rem 1.2rem; border-radius:0 0 4px 4px; white-space:nowrap; }
+.price-plan { font-size:.7rem; letter-spacing:.18em; text-transform:uppercase; color:var(--muted); margin-bottom:.4rem; }
+.price-card.featured .price-plan { color:var(--blue); }
+.price-tagline { font-size:.82rem; color:var(--muted); margin-bottom:1.5rem; line-height:1.5; min-height:2.4rem; }
+.price-amounts { display:grid; grid-template-columns:1fr 1fr; gap:1.2rem; margin-bottom:1rem; }
+.price-col-label { font-size:.6rem; letter-spacing:.15em; text-transform:uppercase; color:var(--dim); margin-bottom:.35rem; }
+.price-amount { font-family:var(--serif); font-size:2.2rem; font-weight:800; color:var(--text); line-height:1; }
+.price-amount sup { font-size:.95rem; vertical-align:top; margin-top:.4rem; color:var(--muted); }
+.price-amount .per { font-size:.9rem; font-weight:400; color:var(--muted); }
+.price-period { font-size:.72rem; color:var(--muted); margin-top:.3rem; }
+.price-divider { border:none; border-top:1px solid var(--border); margin:1.4rem 0; }
+.features-col-label { font-size:.65rem; letter-spacing:.14em; text-transform:uppercase; font-weight:600; margin-bottom:.8rem; }
 .features-col-label.blue { color:var(--blue); }
 .features-col-label.teal { color:var(--teal); }
-.price-features { list-style:none; display:flex; flex-direction:column; gap:.65rem; }
-.price-features li { font-size:.84rem; color:var(--muted); display:flex; gap:.6rem; align-items:flex-start; }
+.price-features { list-style:none; display:flex; flex-direction:column; gap:.6rem; margin-bottom:1.2rem; }
+.price-features li { font-size:.82rem; color:var(--muted); display:flex; gap:.6rem; align-items:flex-start; line-height:1.5; }
 .price-features li::before { content:'–'; color:var(--teal); font-weight:700; flex-shrink:0; }
-.price-total-row { display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:.5rem; margin-bottom:1.5rem; }
-.price-total-label { font-size:.8rem; color:var(--muted); }
-.price-total-val { font-family:var(--serif); font-size:1.5rem; font-weight:800; color:var(--blue); }
-.price-total-sub { font-size:.72rem; color:var(--muted); font-weight:400; }
+.price-total-row { display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:.3rem; margin-bottom:1.3rem; margin-top:auto; padding-top:.5rem; }
+.price-total-label { font-size:.75rem; color:var(--muted); }
+.price-total-val { font-family:var(--serif); font-size:1.25rem; font-weight:800; color:var(--blue); }
+.price-total-sub { font-size:.68rem; color:var(--muted); font-weight:400; display:block; margin-top:.15rem; }
 .price-fine { font-size:.68rem; color:var(--dim); text-align:center; margin-top:.75rem; }
  
 /* CONTACT */
@@ -318,6 +321,7 @@ footer { background:var(--bg); border-top:1px solid var(--border); padding:2.2re
   .always-on { grid-template-columns:1fr; }
   .always-right { border-left:none; border-top:1px solid var(--border); }
   .process-steps { grid-template-columns:1fr 1fr; }
+  .price-grid { grid-template-columns:1fr; gap:2rem; max-width:560px; }
   .contact { grid-template-columns:1fr; }
   .contact-right { border-left:none; border-top:1px solid var(--border); }
 }
@@ -329,8 +333,8 @@ footer { background:var(--bg); border-top:1px solid var(--border); padding:2.2re
   .hero-actions .btn-primary, .hero-actions .btn-outline { text-align:center; }
   .services-grid { grid-template-columns:1fr; }
   .process-steps { grid-template-columns:1fr; }
+  .price-grid { grid-template-columns:1fr; gap:2.5rem; }
   .price-amounts { grid-template-columns:1fr 1fr; }
-  .price-features-grid { grid-template-columns:1fr; gap:1.5rem; }
   .form-row { grid-template-columns:1fr; }
   footer { flex-direction:column; align-items:flex-start; }
   .footer-links { gap:1rem; }
@@ -579,55 +583,97 @@ footer { background:var(--bg); border-top:1px solid var(--border); padding:2.2re
   <div class="pricing-intro fade-up">
     <p class="section-tag">Transparent pricing</p>
     <h2 class="section-title">Simple pricing, <em>no surprises.</em></h2>
-    <p>One payment to get you online. One small monthly fee to keep you there and growing.</p>
+    <p>Pick the plan that fits your business. One payment to launch, one small monthly fee to keep growing.</p>
   </div>
-  <div class="price-card fade-up">
-    <div class="featured-badge">Everything included</div>
-    <div class="price-plan">One Plan &middot; Total Transparency</div>
-    <div class="price-amounts">
-      <div>
-        <div class="price-col-label">One-time setup</div>
-        <div class="price-amount"><sup>$</sup>550</div>
-        <div class="price-period">paid once to get started</div>
+  <div class="price-grid">
+
+    <!-- STARTER -->
+    <div class="price-card fade-up">
+      <div class="price-plan">Starter</div>
+      <p class="price-tagline">A single, polished page to get your business online fast.</p>
+      <div class="price-amounts">
+        <div>
+          <div class="price-col-label">One-time setup</div>
+          <div class="price-amount"><sup>$</sup>450</div>
+          <div class="price-period">paid once to get started</div>
+        </div>
+        <div>
+          <div class="price-col-label">Then monthly</div>
+          <div class="price-amount"><sup>$</sup>50<span class="per">/mo</span></div>
+          <div class="price-period">ongoing after launch</div>
+        </div>
       </div>
-      <div>
-        <div class="price-col-label">Then monthly</div>
-        <div class="price-amount"><sup>$</sup>50<span class="per">/mo</span></div>
-        <div class="price-period">ongoing after launch</div>
+      <hr class="price-divider">
+      <div class="features-col-label blue">Setup includes</div>
+      <ul class="price-features">
+        <li>Custom one-page design</li>
+        <li>Mobile &amp; tablet friendly</li>
+        <li>Contact &amp; enquiry form</li>
+        <li>Google Maps integration</li>
+        <li>SEO foundations built in</li>
+        <li>Launched &amp; ready to go</li>
+      </ul>
+      <div class="features-col-label teal">Monthly covers</div>
+      <ul class="price-features">
+        <li>Domain name &amp; renewal</li>
+        <li>Website hosting &amp; security</li>
+        <li>Content changes on request</li>
+        <li>Ongoing support</li>
+      </ul>
+      <hr class="price-divider">
+      <div class="price-total-row">
+        <span class="price-total-label">First year all-in:</span>
+        <span class="price-total-val">$1,050 <span class="price-total-sub">($450 + 12 &times; $50)</span></span>
       </div>
+      <a href="#contact" class="btn-outline" style="width:100%;text-align:center;display:block;font-size:.85rem;padding:1rem;">Start with Starter &rarr;</a>
+      <p class="price-fine">No lock-in contract &middot; Cancel the monthly plan anytime</p>
     </div>
-    <hr class="price-divider">
-    <div class="price-features-grid">
-      <div>
-        <div class="features-col-label blue">Setup includes</div>
-        <ul class="price-features">
-          <li>Custom website design</li>
-          <li>Mobile &amp; tablet friendly</li>
-          <li>Contact &amp; enquiry forms</li>
-          <li>Google Maps integration</li>
-          <li>SEO foundations built in</li>
-          <li>Launched &amp; ready to go</li>
-        </ul>
+
+    <!-- PRO -->
+    <div class="price-card featured fade-up">
+      <div class="featured-badge">Most Popular</div>
+      <div class="price-plan">Pro</div>
+      <p class="price-tagline">A full multi-page site built to win trust and bring in leads.</p>
+      <div class="price-amounts">
+        <div>
+          <div class="price-col-label">One-time setup</div>
+          <div class="price-amount"><sup>$</sup>800</div>
+          <div class="price-period">paid once to get started</div>
+        </div>
+        <div>
+          <div class="price-col-label">Then monthly</div>
+          <div class="price-amount"><sup>$</sup>50<span class="per">/mo</span></div>
+          <div class="price-period">ongoing after launch</div>
+        </div>
       </div>
-      <div>
-        <div class="features-col-label teal">Monthly covers</div>
-        <ul class="price-features">
-          <li>Domain name &amp; renewal</li>
-          <li>Website hosting</li>
-          <li>Security &amp; software updates</li>
-          <li>Content changes on request</li>
-          <li>Add new info, photos &amp; pages</li>
-          <li>Ongoing support</li>
-        </ul>
+      <hr class="price-divider">
+      <div class="features-col-label blue">Setup includes</div>
+      <ul class="price-features">
+        <li>Custom multi-page design (up to 5 pages)</li>
+        <li>Services, gallery &amp; about pages</li>
+        <li>Mobile &amp; tablet friendly</li>
+        <li>Contact &amp; enquiry forms</li>
+        <li>Google Maps integration</li>
+        <li>Local SEO setup &amp; Google listing help</li>
+        <li>Launched &amp; ready to go</li>
+      </ul>
+      <div class="features-col-label teal">Monthly covers</div>
+      <ul class="price-features">
+        <li>Domain name &amp; renewal</li>
+        <li>Website hosting &amp; security</li>
+        <li>Content changes on request</li>
+        <li>Add new info, photos &amp; pages</li>
+        <li>Priority ongoing support</li>
+      </ul>
+      <hr class="price-divider">
+      <div class="price-total-row">
+        <span class="price-total-label">First year all-in:</span>
+        <span class="price-total-val">$1,400 <span class="price-total-sub">($800 + 12 &times; $50)</span></span>
       </div>
+      <a href="#contact" class="btn-primary" style="width:100%;text-align:center;display:block;font-size:.88rem;padding:1.1rem;">Get my website &rarr;</a>
+      <p class="price-fine">No lock-in contract &middot; Cancel the monthly plan anytime</p>
     </div>
-    <hr class="price-divider">
-    <div class="price-total-row">
-      <span class="price-total-label">First year all-in:</span>
-      <span class="price-total-val">$1,150 <span class="price-total-sub">($550 + 12 &times; $50)</span></span>
-    </div>
-    <a href="#contact" class="btn-primary" style="width:100%;text-align:center;display:block;font-size:.88rem;padding:1.1rem;">Get my website &rarr;</a>
-    <p class="price-fine">No lock-in contract &middot; Cancel the monthly plan anytime</p>
+
   </div>
 </section>
  
